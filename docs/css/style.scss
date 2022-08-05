@@ -8,6 +8,7 @@ $white: #fff;
      text-decoration: none;
      margin: 0;
      padding: 0;
+     color: $white;
 }
 
 #container {
@@ -20,6 +21,8 @@ $white: #fff;
      min-height: 600px;
      background-color: $blacker;
 
+
+     // HEADER
      #header {
           display: flex;
           flex-flow: column wrap;
@@ -105,6 +108,76 @@ $white: #fff;
                     }
                }
           }
+     }
+
+     // CONTENT
+     #content {
+          display: flex;
+          flex-flow: row wrap;
+          padding: 5% 0;
+          justify-content: center;
+
+          @media (min-width:880px) {
+               justify-content: space-between;
+          }
+
+          #categories {
+               flex-grow: 1;
+
+               @media (min-width:880px) {
+                    flex-basis: 20%;
+               }
+          }
+
+          #projects {
+               display: flex;
+               margin-top: 20px;
+               flex-flow: row wrap;
+               flex-basis: 78%;
+               // flex-grow: 5;
+               justify-content: center;
+               @media (min-width:880px){
+                    margin-top: 0;
+                    justify-content: space-between;
+                    // margin-right: 20px;
+               }
+
+               .project-info{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    flex-grow: 1;
+                    // flex-basis: 20%;
+                    border: 1px solid $primary-color;
+                    @media (min-width:880px){
+                         width: 30%;
+                         margin-right: 30px;
+                    }
+
+                    img{
+                         width: 100%;
+                    }
+
+                    .description{
+                         padding: 5px;
+                         text-align: center;
+
+                         a{
+                              color:$secondary-color;
+                              transition: all 400ms;
+                         }
+                         a:hover{
+                              color:$white;
+                              text-shadow: 0 0 1px $primary-color;
+                         }
+
+                         p{
+                              color:$primary-color;
+                         }
+                    }
+               }
+          }
+
+
      }
 
 }
