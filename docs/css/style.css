@@ -204,5 +204,59 @@
 #container #content #projects .project-info .description p {
   color: #5C02A7;
 }
+#container #footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-top: 1px solid rgba(225, 225, 226, 0.8);
+}
+@media (min-width: 880px) {
+  #container #footer {
+    height: 120px;
+    align-items: center;
+  }
+}
+#container #footer .logo {
+  opacity: 0.5;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+@media (min-width: 880px) {
+  #container #footer .logo {
+    margin-left: 3%;
+    text-align: left;
+    flex-basis: auto;
+    flex-grow: 20;
+  }
+}
+#container #footer .logo h3 {
+  margin: 9px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 130%;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 880px) {
+  #container #footer .logo h3 {
+    margin: 0;
+    text-align: left;
+  }
+}
+#container #footer .info {
+  flex-basis: 100%;
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 9px;
+}
+@media (min-width: 880px) {
+  #container #footer .info {
+    flex-basis: auto;
+    margin-right: 47px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
